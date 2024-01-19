@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45775B142A5AF70F00F70CCB /* WaterUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45775B132A5AF70F00F70CCB /* WaterUIApp.swift */; };
+		45775B162A5AF70F00F70CCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45775B152A5AF70F00F70CCB /* ContentView.swift */; };
+		45775B182A5AF71300F70CCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45775B172A5AF71300F70CCB /* Assets.xcassets */; };
+		45775B1B2A5AF71300F70CCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45775B1A2A5AF71300F70CCB /* Preview Assets.xcassets */; };
+		45E82EFF2AC976260067DD06 /* WordListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E82EFE2AC976260067DD06 /* WordListView.swift */; };
+		45E82F032AC977780067DD06 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E82F022AC977780067DD06 /* WordModel.swift */; };
+		45E82F052AC977F90067DD06 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E82F042AC977F90067DD06 /* CardModel.swift */; };
+		45E82F072AC9781C0067DD06 /* TinderCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E82F062AC9781C0067DD06 /* TinderCardView.swift */; };
+		45E82F092AC981830067DD06 /* WordCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E82F082AC981830067DD06 /* WordCardModel.swift */; };
+		45E82F0B2AC981DD0067DD06 /* AddNewWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E82F0A2AC981DD0067DD06 /* AddNewWordView.swift */; };
+		45E82F0D2AC982A70067DD06 /* WaterWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E82F0C2AC982A70067DD06 /* WaterWaveView.swift */; };
+		45E82F102AC983190067DD06 /* WordDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E82F0F2AC983190067DD06 /* WordDataViewModel.swift */; };
+		F7AF87806776E700A1D0FD5C /* Pods_WaterUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A946C9274F6E418F11F5682 /* Pods_WaterUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		45775B102A5AF70F00F70CCB /* WaterUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45775B132A5AF70F00F70CCB /* WaterUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterUIApp.swift; sourceTree = "<group>"; };
+		45775B152A5AF70F00F70CCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		45775B172A5AF71300F70CCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45775B1A2A5AF71300F70CCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		45E82EFE2AC976260067DD06 /* WordListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListView.swift; sourceTree = "<group>"; };
+		45E82F022AC977780067DD06 /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
+		45E82F042AC977F90067DD06 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		45E82F062AC9781C0067DD06 /* TinderCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderCardView.swift; sourceTree = "<group>"; };
+		45E82F082AC981830067DD06 /* WordCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCardModel.swift; sourceTree = "<group>"; };
+		45E82F0A2AC981DD0067DD06 /* AddNewWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewWordView.swift; sourceTree = "<group>"; };
+		45E82F0C2AC982A70067DD06 /* WaterWaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWaveView.swift; sourceTree = "<group>"; };
+		45E82F0F2AC983190067DD06 /* WordDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDataViewModel.swift; sourceTree = "<group>"; };
+		4BEA278B17650DF38C39320F /* Pods-WaterUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterUI.release.xcconfig"; path = "Target Support Files/Pods-WaterUI/Pods-WaterUI.release.xcconfig"; sourceTree = "<group>"; };
+		6A946C9274F6E418F11F5682 /* Pods_WaterUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaterUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C644B5278CC65C8764AE10FC /* Pods-WaterUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterUI.debug.xcconfig"; path = "Target Support Files/Pods-WaterUI/Pods-WaterUI.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45775B0D2A5AF70F00F70CCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7AF87806776E700A1D0FD5C /* Pods_WaterUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45775B072A5AF70F00F70CCB = {
+			isa = PBXGroup;
+			children = (
+				45775B122A5AF70F00F70CCB /* WaterUI */,
+				45775B112A5AF70F00F70CCB /* Products */,
+				70EF4A7263CF71D5C9B032EC /* Pods */,
+				8DE2F4DC4EA476928C1F6FF4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		45775B112A5AF70F00F70CCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45775B102A5AF70F00F70CCB /* WaterUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45775B122A5AF70F00F70CCB /* WaterUI */ = {
+			isa = PBXGroup;
+			children = (
+				45775B132A5AF70F00F70CCB /* WaterUIApp.swift */,
+				45775B152A5AF70F00F70CCB /* ContentView.swift */,
+				45E82F012AC977590067DD06 /* Model */,
+				45E82F002AC977270067DD06 /* View */,
+				45E82F0E2AC982EC0067DD06 /* ViewModel */,
+				45775B172A5AF71300F70CCB /* Assets.xcassets */,
+				45775B192A5AF71300F70CCB /* Preview Content */,
+			);
+			path = WaterUI;
+			sourceTree = "<group>";
+		};
+		45775B192A5AF71300F70CCB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				45775B1A2A5AF71300F70CCB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		45E82F002AC977270067DD06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45E82EFE2AC976260067DD06 /* WordListView.swift */,
+				45E82F0A2AC981DD0067DD06 /* AddNewWordView.swift */,
+				45E82F062AC9781C0067DD06 /* TinderCardView.swift */,
+				45E82F0C2AC982A70067DD06 /* WaterWaveView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		45E82F012AC977590067DD06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45E82F022AC977780067DD06 /* WordModel.swift */,
+				45E82F082AC981830067DD06 /* WordCardModel.swift */,
+				45E82F042AC977F90067DD06 /* CardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		45E82F0E2AC982EC0067DD06 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				45E82F0F2AC983190067DD06 /* WordDataViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		70EF4A7263CF71D5C9B032EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C644B5278CC65C8764AE10FC /* Pods-WaterUI.debug.xcconfig */,
+				4BEA278B17650DF38C39320F /* Pods-WaterUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8DE2F4DC4EA476928C1F6FF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A946C9274F6E418F11F5682 /* Pods_WaterUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45775B0F2A5AF70F00F70CCB /* WaterUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45775B1E2A5AF71300F70CCB /* Build configuration list for PBXNativeTarget "WaterUI" */;
+			buildPhases = (
+				872EFC074CEA6AB38D8D5246 /* [CP] Check Pods Manifest.lock */,
+				45775B0C2A5AF70F00F70CCB /* Sources */,
+				45775B0D2A5AF70F00F70CCB /* Frameworks */,
+				45775B0E2A5AF70F00F70CCB /* Resources */,
+				6145B08681736BBA08413FB9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaterUI;
+			productName = WaterUI;
+			productReference = 45775B102A5AF70F00F70CCB /* WaterUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45775B082A5AF70F00F70CCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					45775B0F2A5AF70F00F70CCB = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 45775B0B2A5AF70F00F70CCB /* Build configuration list for PBXProject "WaterUI" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45775B072A5AF70F00F70CCB;
+			productRefGroup = 45775B112A5AF70F00F70CCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45775B0F2A5AF70F00F70CCB /* WaterUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45775B0E2A5AF70F00F70CCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45775B1B2A5AF71300F70CCB /* Preview Assets.xcassets in Resources */,
+				45775B182A5AF71300F70CCB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6145B08681736BBA08413FB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaterUI/Pods-WaterUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaterUI/Pods-WaterUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WaterUI/Pods-WaterUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		872EFC074CEA6AB38D8D5246 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaterUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45775B0C2A5AF70F00F70CCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45775B162A5AF70F00F70CCB /* ContentView.swift in Sources */,
+				45E82F0B2AC981DD0067DD06 /* AddNewWordView.swift in Sources */,
+				45E82EFF2AC976260067DD06 /* WordListView.swift in Sources */,
+				45E82F072AC9781C0067DD06 /* TinderCardView.swift in Sources */,
+				45E82F102AC983190067DD06 /* WordDataViewModel.swift in Sources */,
+				45775B142A5AF70F00F70CCB /* WaterUIApp.swift in Sources */,
+				45E82F032AC977780067DD06 /* WordModel.swift in Sources */,
+				45E82F092AC981830067DD06 /* WordCardModel.swift in Sources */,
+				45E82F0D2AC982A70067DD06 /* WaterWaveView.swift in Sources */,
+				45E82F052AC977F90067DD06 /* CardModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		45775B1C2A5AF71300F70CCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45775B1D2A5AF71300F70CCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45775B1F2A5AF71300F70CCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C644B5278CC65C8764AE10FC /* Pods-WaterUI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WaterUI/Preview Content\"";
+				DEVELOPMENT_TEAM = KC32UXAU7R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bstep.WaterUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45775B202A5AF71300F70CCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BEA278B17650DF38C39320F /* Pods-WaterUI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WaterUI/Preview Content\"";
+				DEVELOPMENT_TEAM = KC32UXAU7R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bstep.WaterUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45775B0B2A5AF70F00F70CCB /* Build configuration list for PBXProject "WaterUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45775B1C2A5AF71300F70CCB /* Debug */,
+				45775B1D2A5AF71300F70CCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45775B1E2A5AF71300F70CCB /* Build configuration list for PBXNativeTarget "WaterUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45775B1F2A5AF71300F70CCB /* Debug */,
+				45775B202A5AF71300F70CCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45775B082A5AF70F00F70CCB /* Project object */;
+}
