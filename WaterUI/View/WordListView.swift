@@ -55,9 +55,6 @@ struct WordListView: View {
                             Text(word.wordInEnglish)
                             Spacer()
                             Text("\(Int(word.learningLevel))")
-                            Slider(value: .constant(Double(word.learningLevel)),
-                                                               in: 0...100,
-                                   step: 1.0).frame(width: 100)
                         }
                         .contentShape(Rectangle())
                         .onTapGesture {
