@@ -16,6 +16,7 @@ struct WordCardModel: Identifiable, Equatable {
     var xPosition: CGFloat
     var yPosition: CGFloat
     var learningLevel: CGFloat = 0.0
+    var lastUpdated: String
     
     @State var offset: CGSize = CGSize(width: 0, height: -10.0)
     

@@ -13,6 +13,7 @@ struct AddNewWordView: View {
     @State private var englishWordText: String = ""
     @State private var japaneseWordText: String = ""
     @State private var learningLevel: Double = 50
+    @State private var lastUpdated: String = ""
     @Binding var addNewWordSheetIsActive: Bool
     
     private let maxCharacterCount = 20
@@ -111,6 +112,11 @@ struct AddNewWordView: View {
             return
         }
         
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yMMMdHms", options: 0, locale: Locale(identifier: "ja_JP"))
+        lastUpdated = dateFormatter.string(from: date)
+        
         //xポジションをランダムにする。値の範囲は30から画面幅-30までの間とする
         let bounds = UIScreen.main.bounds
         let screenWidth = Int(bounds.width)
@@ -121,7 +127,8 @@ struct AddNewWordView: View {
             wordInJapanese: japaneseWordText,
             xPosition: CGFloat(xPosition),
             yPosition: 100, //yPositionは特に使わないがダミーで入れている
-            learningLevel: learningLevel)
+            learningLevel: learningLevel,
+            lastUpdated: lastUpdated)
         
         let newWordModel = WordModel(wordCardModel: dataToAdd)
         
