@@ -15,6 +15,7 @@ class WordModel: Object, Identifiable {
     @Persisted var xPosition: Double
     @Persisted var yPosition: Double
     @Persisted var learningLevel: Double = 0.0
+    @Persisted var lastUpdated: String
     
     // Create a custom initializer to convert from WordCardModel to WordModel
     convenience init(wordCardModel: WordCardModel) {
@@ -24,5 +25,6 @@ class WordModel: Object, Identifiable {
         self.xPosition = Double(wordCardModel.xPosition)
         self.yPosition = Double(wordCardModel.yPosition)
         self.learningLevel = Double(wordCardModel.learningLevel)
+        self.lastUpdated = wordCardModel.lastUpdated
     }
 }
