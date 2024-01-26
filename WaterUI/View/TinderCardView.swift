@@ -109,7 +109,14 @@ struct TinderCardView: View {
                     .onEnded { value in
                         withAnimation {
                             if abs(self.translation.width) > self.swipeThreshold {
+                                
+                                let date = Date()
+                                let dateFormatter = DateFormatter()
+                                dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yMMMdHms", options: 0, locale: Locale(identifier: "ja_JP"))
+                                let lastUpdated = dateFormatter.string(from: date)
+                                
                                 // フリックした方向に応じてカードを左右にスワイプする
+                                
                                 if self.translation.width > 0 {
                                     // 右にスワイプした場合の処理（お気に入りへの追加など）
                                     
@@ -133,6 +140,7 @@ struct TinderCardView: View {
                                     do {
                                         try realm.write {
                                             targetWord.learningLevel = newCard.learningLevel
+                                            targetWord.lastUpdated = lastUpdated
                                         }
                                     } catch {
                                         print("Error saving to Realm")
@@ -161,6 +169,7 @@ struct TinderCardView: View {
                                     do {
                                         try realm.write {
                                             targetWord.learningLevel = newCard.learningLevel
+                                            targetWord.lastUpdated = lastUpdated
                                         }
                                     } catch {
                                         print("Error saving to Realm")
