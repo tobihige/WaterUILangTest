@@ -58,6 +58,7 @@ struct WordListView: View {
                         }
                         .contentShape(Rectangle())
                         .onTapGesture {
+                            print(word)
                             selectedWord = word
                             isCardVisible = true
                         }
@@ -147,6 +148,7 @@ struct WordListView: View {
         }
         
         sortedWords.remove(atOffsets: offsets)
-       
+        
+        sortedWords = sortWords()
     }
 }
