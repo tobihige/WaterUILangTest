@@ -131,6 +131,8 @@ struct TinderCardView: View {
                                         newCard.learningLevel += 1
                                     }
                                     
+                                    newCard.theNumberOfAttempts += 1
+                                    
                                     
                                     
                                     let realm = try! Realm()
@@ -141,6 +143,7 @@ struct TinderCardView: View {
                                         try realm.write {
                                             targetWord.learningLevel = newCard.learningLevel
                                             targetWord.lastUpdated = lastUpdated
+                                            targetWord.theNumberOfAttempts = newCard.theNumberOfAttempts
                                         }
                                     } catch {
                                         print("Error saving to Realm")
@@ -161,6 +164,7 @@ struct TinderCardView: View {
                                         newCard.learningLevel -= 1
                                     }
                                     
+                                    newCard.theNumberOfAttempts += 1
                                     
                                     let realm = try! Realm()
                                     
@@ -170,6 +174,7 @@ struct TinderCardView: View {
                                         try realm.write {
                                             targetWord.learningLevel = newCard.learningLevel
                                             targetWord.lastUpdated = lastUpdated
+                                            targetWord.theNumberOfAttempts = newCard.theNumberOfAttempts
                                         }
                                     } catch {
                                         print("Error saving to Realm")

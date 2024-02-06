@@ -128,7 +128,8 @@ struct AddNewWordView: View {
             xPosition: CGFloat(xPosition),
             yPosition: 100, //yPositionは特に使わないがダミーで入れている
             learningLevel: learningLevel,
-            lastUpdated: lastUpdated)
+            lastUpdated: lastUpdated,
+            theNumberOfAttempts: 0)
         
         let newWordModel = WordModel(wordCardModel: dataToAdd)
         

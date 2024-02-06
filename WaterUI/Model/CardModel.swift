@@ -14,5 +14,6 @@ struct CardModel: Identifiable {
     let wordInEnglish: String
     let wordInJapanese: String
     var learningLevel: Double
+    var theNumberOfAttempts: Int
     
 }
