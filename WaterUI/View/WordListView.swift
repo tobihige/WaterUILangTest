@@ -113,7 +113,8 @@ struct WordListView: View {
                 card: CardModel(id: word.id,
                                 wordInEnglish: word.wordInEnglish,
                                 wordInJapanese: word.wordInJapanese,
-                                learningLevel: word.learningLevel
+                                learningLevel: word.learningLevel,
+                                theNumberOfAttempts: word.theNumberOfAttempts
                                ),
                 wordDataViewModel: wordDataViewModel,
                 isCardVisible: $isCardVisible

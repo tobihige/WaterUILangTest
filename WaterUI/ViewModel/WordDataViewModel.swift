@@ -12,7 +12,7 @@ class WordDataViewModel: ObservableObject {
     @Published var realmData: Results<WordModel>?
     
     init() {
-        let config = Realm.Configuration(schemaVersion: 1)
+        let config = Realm.Configuration(schemaVersion: 2)
         Realm.Configuration.defaultConfiguration = config
         
         let realm = try! Realm()
