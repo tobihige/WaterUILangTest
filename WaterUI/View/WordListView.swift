@@ -28,7 +28,7 @@ struct WordListView: View {
     @State private var learningLevels: [Double] = []
     @State private var selectedWord: WordModel?
     @State private var shouldUpdateList = false
-    @State private var isCardVisible = false
+    @State private var isWordDetailViewVisible = false
     @ObservedObject var wordDataViewModel = WordDataViewModel()
     
     @State var sortedWords: [WordModel] = try! Realm().objects(WordModel.self).sorted(by: { $0.wordInEnglish < $1.wordInEnglish
@@ -60,7 +60,7 @@ struct WordListView: View {
                         .onTapGesture {
                             print(word)
                             selectedWord = word
-                            isCardVisible = true
+                            isWordDetailViewVisible = true
                         }
                     }
                     .onDelete(perform: rowRemove)
@@ -109,16 +109,7 @@ struct WordListView: View {
         
 //        ここからwordCardを表示するための処理を追加
         if let word = selectedWord {
-            TinderCardView(
-                card: CardModel(id: word.id,
-                                wordInEnglish: word.wordInEnglish,
-                                wordInJapanese: word.wordInJapanese,
-                                learningLevel: word.learningLevel,
-                                theNumberOfAttempts: word.theNumberOfAttempts
-                               ),
-                wordDataViewModel: wordDataViewModel,
-                isCardVisible: $isCardVisible
-            )
+            WordDetailView(theNumberOfAttempts: word.theNumberOfAttempts)
         }
     }
     

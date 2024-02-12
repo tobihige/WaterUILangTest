@@ -11,6 +11,7 @@
 		45775B162A5AF70F00F70CCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45775B152A5AF70F00F70CCB /* ContentView.swift */; };
 		45775B182A5AF71300F70CCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45775B172A5AF71300F70CCB /* Assets.xcassets */; };
 		45775B1B2A5AF71300F70CCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45775B1A2A5AF71300F70CCB /* Preview Assets.xcassets */; };
+		45D18BAC2B76657600219EB8 /* WordDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D18BAB2B76657600219EB8 /* WordDetailView.swift */; };
 		45E82EFF2AC976260067DD06 /* WordListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E82EFE2AC976260067DD06 /* WordListView.swift */; };
 		45E82F032AC977780067DD06 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E82F022AC977780067DD06 /* WordModel.swift */; };
 		45E82F052AC977F90067DD06 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E82F042AC977F90067DD06 /* CardModel.swift */; };
@@ -28,6 +29,7 @@
 		45775B152A5AF70F00F70CCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		45775B172A5AF71300F70CCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45775B1A2A5AF71300F70CCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		45D18BAB2B76657600219EB8 /* WordDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailView.swift; sourceTree = "<group>"; };
 		45E82EFE2AC976260067DD06 /* WordListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListView.swift; sourceTree = "<group>"; };
 		45E82F022AC977780067DD06 /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
 		45E82F042AC977F90067DD06 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				45E82F0A2AC981DD0067DD06 /* AddNewWordView.swift */,
 				45E82F062AC9781C0067DD06 /* TinderCardView.swift */,
 				45E82F0C2AC982A70067DD06 /* WaterWaveView.swift */,
+				45D18BAB2B76657600219EB8 /* WordDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				45775B162A5AF70F00F70CCB /* ContentView.swift in Sources */,
 				45E82F0B2AC981DD0067DD06 /* AddNewWordView.swift in Sources */,
 				45E82EFF2AC976260067DD06 /* WordListView.swift in Sources */,
+				45D18BAC2B76657600219EB8 /* WordDetailView.swift in Sources */,
 				45E82F072AC9781C0067DD06 /* TinderCardView.swift in Sources */,
 				45E82F102AC983190067DD06 /* WordDataViewModel.swift in Sources */,
 				45775B142A5AF70F00F70CCB /* WaterUIApp.swift in Sources */,
